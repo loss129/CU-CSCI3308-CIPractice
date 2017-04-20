@@ -1,8 +1,5 @@
-language:c
-before_install: -test -n $CC && unset CC
-install: make dep
-
-make && make test
+language: c
 script: scons
-compiler: 
-   -gcc
+compiler: gcc
+before_install:
+  - test -n $CC && unset CC
