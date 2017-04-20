@@ -1,5 +1,5 @@
 language: c
-install: make dep
+install: apt-get install check
 compiler: gcc
 script: make && make test
 before_install:
