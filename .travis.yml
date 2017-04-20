@@ -1,6 +1,9 @@
 language: c
-install: apt-get install check
 compiler: gcc
 script: make && make test
 before_install:
   - test -n $CC && unset CC
+addons:
+ apt:
+  packages:
+  - check
