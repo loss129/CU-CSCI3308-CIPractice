@@ -3,7 +3,7 @@ before_install:
 	-test -n $CC && unset CC
 install: make dep
 
-./configure && make && make test
+make && make test
 script: scons
 compiler: 
    -gcc
